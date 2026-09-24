@@ -1,0 +1,2 @@
+# SATARK-details
+Satark Project
