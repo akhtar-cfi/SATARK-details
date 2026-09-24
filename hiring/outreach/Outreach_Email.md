@@ -25,7 +25,7 @@ You are receiving this because you opted in to UPSC's PRATIBHA Setu. We are a re
 
 **Who we are.** Crashfree India is a road-safety nonprofit founded with Cars24's backing, working toward zero road deaths in India. MS Dhoni is our Goodwill Ambassador. India loses more than 1.7 lakh people on its roads every year — most of it preventable, much of it traceable to violations that were detected and never enforced. 64% of all e-challan value issued since 2015 remains unpaid: over ₹42,000 crore.
 
-**What we built.** SATARK is an AI enforcement platform for traffic police: ANPR cameras check every passing vehicle against live government records — pending challans, insurance, PUCC, fitness — and alert officers to intercept, in about ten seconds, with a full audit trail. It is live in Jaipur, Bengaluru and Gurugram. 6.7 lakh+ vehicles screened, ₹65 crore+ in pending dues identified, 700+ police interceptions recorded. On 4 August 2026, the Supreme Court (2026 INSC 793) directed the whole country to build exactly this mechanism. We had deployed it in June.
+**What we built.** SATARK is an AI enforcement platform for traffic police: ANPR cameras check every passing vehicle against live government records — pending challans, insurance, PUCC, fitness — and alert officers to intercept, in about ten seconds, with a full audit trail. It is live in Jaipur, Bengaluru and Gurugram, with installation underway in four more cities. 5.4 lakh+ vehicles screened, ₹53 crore+ in pending dues identified, 600+ police interceptions recorded. On 4 August 2026, the Supreme Court (2026 INSC 793) directed the whole country to build exactly this mechanism. We had deployed it in June.
 
 **The job.** We are hiring one person to lead the SATARK pod and take it to the 100 districts where India loses the most lives, by December 2027. That means sitting across from police commissioners, transport secretaries and ministry officials; convincing them to adopt it; and staying with them until officers are stopping vehicles. You will run the pod like a founder runs a company — own the pipeline, the targets and the outcomes — working directly with Crashfree India's leadership and Cars24's founders.
 
@@ -56,7 +56,7 @@ IIT Delhi '20 · akhtar@crashfreeindia.org · crashfreeindia.org
 
 ## Notes for review
 
-- **Numbers used** (6.7L scanned / ₹65 Cr / 700+ interceptions) are from Yuvraj's 22-Sep Slack update — newer than the deck's figures. Reconcile once before send.
+- **Numbers used** (5.4L+ scanned / ₹53 Cr+ / 600+ interceptions) match Yuvraj's "SATARK - Sep common" deck (23 Sep) — confirmed most-updated source.
 - The SC citation (2026 INSC 793, 4 Aug 2026) and "64% / ₹42,000 Cr" come from the briefing deck.
 - Deliberately no salary figure: the pool's current comp spans ₹25k–₹4.4L/month; a printed band would filter wrongly in both directions.
 - The opt-out line and PRATIBHA Setu provenance line keep us clean on data-handling (sheet marks contacts "review before outreach").
