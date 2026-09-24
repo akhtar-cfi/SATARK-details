@@ -5,7 +5,7 @@
 ## Funnel (5 gates, ~10 days)
 
 ### Gate 0 — Application screen (built into the outreach email)
-The email asks for two things: **a CV** and **a 4–5 minute conviction-pitch video** (link) — pick any problem India ignores, any solution that hasn't seen the light of day, and convince Akhtar the country needs it, backed by data, anticipating counter-questions. *(v2 change, 24 Sep: replaces the earlier 200-word reply; CV is now required.)*
+The email asks for two things: **a CV** and **a 4–5 minute conviction-pitch video** (link) — a problem the candidate is genuinely passionate about, that India ignores, argued with data and anticipating counter-questions. The email seeds four example prompts (footpaths as no city's KPI · child helmets · the golden hour · school-toilet maintenance) to set the register; candidates may go anywhere, roads or not. *(v2 change, 24 Sep: replaces the earlier 200-word reply; CV is now required.)*
 - **Kills:** copy-paste applications, pure exam-toppers with nothing run, people who can't hold a camera and an argument for 4 minutes.
 - **Video scorecard (1–5 each, need ≥18/25):** conviction · data rigor · anticipating counterarguments · clarity · time discipline (did they respect 4–5 min?).
 - **CV read:** cross-check against the PRATIBHA Setu bio and the screening flags; verify founder/leadership claims on LinkedIn.

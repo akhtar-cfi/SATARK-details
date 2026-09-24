@@ -28,7 +28,13 @@ The attached one-pager has the full picture.
 
 **If this pulls at you, send me two things:**
 1. **Your CV.**
-2. **A 4–5 minute video** (a link is fine): pick any problem this country ignores — any solution that hasn't seen the light of day; pedestrian safety alone is full of them — and convince me that India needs it. Back it with data. Anticipate my questions. We are not testing polish. We are testing conviction.
+2. **A 4–5 minute video** (a link is fine): pick a problem you are genuinely passionate about — any problem this country ignores, any solution that hasn't seen the light of day — and convince me that India needs it. To show you the kind of thing we mean:
+   - Why is a footpath no city's KPI, when walking is how most Indians reach a bus stop?
+   - Why does a child on a two-wheeler still ride without a helmet, decades after the law was written?
+   - Why do crash victims die in the golden hour with a trauma centre twenty minutes away?
+   - Why do government school toilets get built and never maintained?
+
+   Those are ours. Yours can be anything — roads, or far from them. Back it with data. Anticipate my questions. We are not testing polish. We are testing conviction.
 
 I read every reply myself and respond within two days.
 
@@ -42,6 +48,7 @@ akhtar@crashfreeindia.org · crashfreeindia.org
 ---
 
 ## Notes for review
+- v2.1 change per Akhtar (24 Sep): video ask reframed as "a problem you are genuinely passionate about" + 4 seed examples (footpaths, child helmets, golden hour, school toilets) so candidates see the register expected. Examples kept qualitative — no statistics a candidate could challenge.
 - v2 changes per Akhtar (24 Sep): intention up front; crisp; **CV now required**; screening ask replaced with the 4–5 min conviction-pitch video (any ignored problem, data-backed, anticipate questions).
 - Numbers per Yuvraj's "SATARK – Sep common" deck (23 Sep).
 - Assessment impact: the video becomes Gate 0 scoring material (conviction · data rigor · anticipating counterarguments · clarity · time discipline). The 90-Day District Plan moves to shortlisted candidates only.
