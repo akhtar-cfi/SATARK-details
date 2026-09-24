@@ -4,11 +4,12 @@
 
 ## Funnel (5 gates, ~10 days)
 
-### Gate 0 — Reply screen (built into the outreach email)
-The email itself is the first filter: it asks for 200 words on "something you have run" + why roads. No CV.
-- **Kills:** copy-paste cover letters, "respected sir kindly consider", pure exam-toppers with nothing run.
-- **Read for:** a specific thing they owned (with numbers/stakes), plain language, and whether the "why roads" line is felt or generic.
-- Time cost: 10 min/reply. Advance ~30–40%.
+### Gate 0 — Application screen (built into the outreach email)
+The email asks for two things: **a CV** and **a 4–5 minute conviction-pitch video** (link) — pick any problem India ignores, any solution that hasn't seen the light of day, and convince Akhtar the country needs it, backed by data, anticipating counter-questions. *(v2 change, 24 Sep: replaces the earlier 200-word reply; CV is now required.)*
+- **Kills:** copy-paste applications, pure exam-toppers with nothing run, people who can't hold a camera and an argument for 4 minutes.
+- **Video scorecard (1–5 each, need ≥18/25):** conviction · data rigor · anticipating counterarguments · clarity · time discipline (did they respect 4–5 min?).
+- **CV read:** cross-check against the PRATIBHA Setu bio and the screening flags; verify founder/leadership claims on LinkedIn.
+- Time cost: ~10 min/application. Advance ~30–40%.
 
 ### Gate 1 — 30-min call (Akhtar or Deepanshu)
 Not an interview — a conversation to test the room presence a DCP will experience.
@@ -16,7 +17,7 @@ Not an interview — a conversation to test the room presence a DCP will experie
 - One knowledge probe: "What do you know about why challans go unpaid?" — tests whether they researched us before the call.
 - Gettability check, straight: notice period, family/location, next UPSC attempt plans. **Ask directly whether they will attempt CSE 2027.** (Policy call needed — see Open Questions.)
 
-### Gate 2 — The assignment (48 hours, 2 pages + 5-min video)
+### Gate 2 — The assignment (48 hours, 2 pages + 5-min video; shortlisted candidates only)
 > **The 90-Day District Plan.** Pick any district you know personally (not Jaipur/Bengaluru/Gurugram). You have SATARK, Cars24's funding, and nothing else — no warm introduction. In 2 pages: (1) whom you would meet, in what order, and why that order; (2) the first 10 minutes of your first meeting with the SP/DCP — what you actually say; (3) what will stall you, and what you do in week 6 when nobody has replied; (4) what "live" means and by which day. Then record a 5-minute phone video: pitch SATARK to a skeptical Additional SP who thinks this is a marketing gimmick by a used-car company.
 
 Why this design:
