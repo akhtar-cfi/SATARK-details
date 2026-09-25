@@ -1,9 +1,11 @@
 /**
- * SATARK Outreach Tracker — keeps the "Tracker" tab of this Google Sheet in
- * sync with Gmail, and maintains a "Dashboard" tab with live counts.
+ * SATARK Outreach Tracker — adds outreach-status columns to the right end of the
+ * master screening tab (the tab with Name and Email columns), keeps them in sync
+ * with Gmail, and maintains a "Dashboard" tab with live counts. Existing columns
+ * on the master tab are only read, never moved or rewritten.
  *
  * One-time setup (about 3 minutes):
- *   1. Open the tracker sheet → Extensions → Apps Script.
+ *   1. Open the master screening sheet → Extensions → Apps Script.
  *   2. Delete any code there, paste this whole file, click Save.
  *   3. Choose `setup` in the function dropdown → Run → Allow.
  * Setup builds the Dashboard, runs a first sync, then re-syncs every 30 minutes
@@ -13,8 +15,8 @@
  * gajendra@crashfreeindia.org sees every reply; an inbox that was only CC'd
  * sees replies where the candidate chose "Reply all".
  *
- * The sync only writes the auto columns (Emailed On … Thread). Anything you
- * type in other columns — Video Score, Decision, Notes — is never touched.
+ * The sync only writes its own status columns (Emailed On … Thread). Every other
+ * column — your screening data, and Video Score, Decision, Notes — is never touched.
  */
 
 const CONFIG = {
@@ -24,7 +26,6 @@ const CONFIG = {
   ACK_DEADLINE: '2026-09-26T23:59:59+05:30',
   VIDEO_DEADLINE: '2026-09-28T23:59:59+05:30',
   SYNC_EVERY_MINUTES: 30,                       // allowed: 1, 5, 10, 15, 30
-  TRACKER: 'Tracker',
   DASHBOARD: 'Dashboard',
   TEAM_DOMAINS: ['crashfreeindia.org', 'cars24.com'],
   // Links in our own email and signatures; never counted as a submission.
@@ -35,8 +36,8 @@ const CONFIG = {
 
 const AUTO_HEADERS = ['Emailed On', 'Replied On', 'Ack On Time', 'CV', 'Video On',
                       'Video Link', 'Video On Time', 'Status', 'Last Reply', 'Thread'];
-const ALL_HEADERS = ['Priority', 'Name', 'Email', 'Flag', 'Wave'].concat(AUTO_HEADERS)
-                      .concat(['Video Score (/25)', 'Decision', 'Notes']);
+const MANUAL_HEADERS = ['Video Score (/25)', 'Decision', 'Notes'];
+const TRACK_HEADERS = AUTO_HEADERS.concat(MANUAL_HEADERS);   // appended to the master tab
 
 const VIDEO_HOSTS = ['youtube.com', 'youtu.be', 'vimeo.com', 'loom.com', 'instagram.com'];
 const FILE_HOSTS = ['drive.google.com', 'docs.google.com', 'dropbox.com', 'onedrive.live.com',
@@ -58,8 +59,9 @@ function onOpen() {
 
 function setup() {
   const ss = SpreadsheetApp.getActive();
-  let tr = ss.getSheetByName(CONFIG.TRACKER);
-  if (!tr) { tr = ss.getSheets()[0]; tr.setName(CONFIG.TRACKER); }
+  const tr = findMaster_(ss);
+  if (!tr) throw new Error('No tab with "Name" and "Email" column headers found in this sheet.');
+  PropertiesService.getDocumentProperties().setProperty('MASTER_SHEET_ID', String(tr.getSheetId()));
   ensureHeaders_(tr);
   formatTracker_(tr);
   buildDashboard_(ss, tr);
@@ -81,12 +83,13 @@ function syncTracker() {
   if (!lock.tryLock(30000)) return;
   try {
     const ss = SpreadsheetApp.getActive();
-    const tr = ss.getSheetByName(CONFIG.TRACKER);
+    const tr = getMasterSheet_(ss);
+    if (!tr) throw new Error('Master tab not found. Run setup again.');
     const values = tr.getDataRange().getValues();
     const header = values[0].map(String);
     const col = name => {
       const i = header.indexOf(name);
-      if (i < 0) throw new Error('Tracker is missing the column "' + name + '". Re-run setup.');
+      if (i < 0) throw new Error('The master tab is missing the column "' + name + '". Run setup again.');
       return i;
     };
 
@@ -337,6 +340,22 @@ function searchAll_(query) {
   }
 }
 
+/** The screening tab: the first tab (other than the Dashboard) with Name and Email columns. */
+function findMaster_(ss) {
+  return ss.getSheets().filter(sh => {
+    if (sh.getName() === CONFIG.DASHBOARD || sh.getLastColumn() < 1) return false;
+    const h = sh.getRange(1, 1, 1, sh.getLastColumn()).getValues()[0].map(String);
+    return h.indexOf('Name') >= 0 && h.indexOf('Email') >= 0;
+  })[0] || null;
+}
+
+/** The tab chosen at setup, found by id so renaming the tab doesn't break the sync. */
+function getMasterSheet_(ss) {
+  const id = PropertiesService.getDocumentProperties().getProperty('MASTER_SHEET_ID');
+  const byId = id ? ss.getSheets().filter(sh => String(sh.getSheetId()) === id)[0] : null;
+  return byId || findMaster_(ss);
+}
+
 function colLetter_(n) {
   let s = '';
   while (n > 0) { const m = (n - 1) % 26; s = String.fromCharCode(65 + m) + s; n = Math.floor((n - 1) / 26); }
@@ -346,12 +365,12 @@ function colLetter_(n) {
 function ensureHeaders_(sh) {
   const lastCol = Math.max(sh.getLastColumn(), 1);
   const header = sh.getRange(1, 1, 1, lastCol).getValues()[0].map(String);
-  ALL_HEADERS.forEach(h => {
-    if (header.indexOf(h) < 0) {
-      header.push(h);
-      sh.getRange(1, header.length).setValue(h);
-    }
-  });
+  const missing = TRACK_HEADERS.filter(h => header.indexOf(h) < 0);
+  if (!missing.length) return;
+  const first = sh.getLastColumn() + 1;
+  const need = first + missing.length - 1;
+  if (need > sh.getMaxColumns()) sh.insertColumnsAfter(sh.getMaxColumns(), need - sh.getMaxColumns());
+  sh.getRange(1, first, 1, missing.length).setValues([missing]);
 }
 
 function formatTracker_(sh) {
@@ -360,21 +379,22 @@ function formatTracker_(sh) {
   const rows = Math.max(sh.getMaxRows() - 1, 1);
 
   sh.setFrozenRows(1);
-  sh.setFrozenColumns(c('Name'));
-  sh.getRange(1, 1, 1, header.length).setFontWeight('bold').setBackground('#F1F3F4');
+  if (sh.getFrozenColumns() < c('Name')) sh.setFrozenColumns(c('Name'));
+  TRACK_HEADERS.forEach(h => sh.getRange(1, c(h)).setFontWeight('bold').setBackground('#FFF2CC'));
   ['Emailed On', 'Replied On', 'Video On'].forEach(h =>
     sh.getRange(2, c(h), rows, 1).setNumberFormat('dd-mmm hh:mm'));
-  sh.setColumnWidth(c('Name'), 190);
-  sh.setColumnWidth(c('Email'), 220);
   sh.setColumnWidth(c('Status'), 230);
   sh.setColumnWidth(c('Last Reply'), 320);
   sh.setColumnWidth(c('Video Link'), 220);
   sh.setColumnWidth(c('Notes'), 260);
 
-  const status = sh.getRange(2, c('Status'), rows, 1);
+  const statusCol = c('Status');
+  const status = sh.getRange(2, statusCol, rows, 1);
   const rule = (text, color) => SpreadsheetApp.newConditionalFormatRule()
     .whenTextStartsWith(text).setBackground(color).setRanges([status]).build();
-  sh.setConditionalFormatRules([
+  const others = sh.getConditionalFormatRules().filter(r =>
+    !r.getRanges().some(g => g.getColumn() === statusCol && g.getNumColumns() === 1));
+  sh.setConditionalFormatRules(others.concat([
     rule('Complete', '#D9EAD3'),
     rule('Video in', '#D9EAD3'),
     rule('CV in', '#FFF2CC'),
@@ -382,15 +402,17 @@ function formatTracker_(sh) {
     rule('No reply', '#F4CCCC'),
     rule('Declined', '#E0E0E0'),
     rule('Bounced', '#E0E0E0'),
-  ]);
+  ]));
 
-  if (!sh.getFilter()) sh.getRange(1, 1, sh.getMaxRows(), header.length).createFilter();
+  const filter = sh.getFilter();
+  if (!filter) sh.getRange(1, 1, sh.getMaxRows(), header.length).createFilter();
 }
 
 function buildDashboard_(ss, tr) {
   const header = tr.getRange(1, 1, 1, tr.getLastColumn()).getValues()[0].map(String);
   const L = name => colLetter_(header.indexOf(name) + 1);
-  const rng = name => "'" + CONFIG.TRACKER + "'!" + L(name) + '2:' + L(name);
+  const tab = "'" + tr.getName().replace(/'/g, "''") + "'!";
+  const rng = name => tab + L(name) + '2:' + L(name);
 
   let d = ss.getSheetByName(CONFIG.DASHBOARD);
   if (!d) d = ss.insertSheet(CONFIG.DASHBOARD, 0);
@@ -404,7 +426,7 @@ function buildDashboard_(ss, tr) {
 
   const funnel = [
     ['Funnel', 'Count', '% of emailed'],
-    ['Candidates in pool', '=COUNTA(' + rng('Email') + ')', ''],
+    ['Candidates in pool', '=COUNTA(' + rng('Name') + ')', ''],
     ['Emailed', '=COUNTIF(' + rng('Emailed On') + ',"<>")', ''],
     ['Replied (any)', '=COUNTIF(' + rng('Replied On') + ',"<>")', '=IFERROR(B8/$B$7,0)'],
     ['Acknowledged by 26 Sep', '=COUNTIF(' + rng('Ack On Time') + ',"Yes")', '=IFERROR(B9/$B$7,0)'],
