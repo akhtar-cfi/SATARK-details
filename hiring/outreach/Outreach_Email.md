@@ -1,54 +1,63 @@
-# SATARK Pod Lead — Outreach Email (Draft v2)
+# SATARK Pod Lead — Outreach Email (Draft v3 — Gajendra, founder-led)
 
-**Status:** DRAFT v2 for Akhtar's review — do not send until approved.
-**Attach:** `SATARK_Pod_Lead_Opportunity.pdf` (the "Founder" one-pager)
-**Sender:** akhtar@crashfreeindia.org
-**Send discipline:** individually addressed, no mail-merge tells, 10–15/day so replies get same-day responses.
-
----
-
-## Subject (pick one)
-
-1. `You cleared UPSC Main. We're looking for a founder, not an employee.`
-2. `One founder's seat. 100 districts. — Crashfree India`
+**Status:** DRAFT v3 for review — do not send until approved.
+**From:** Gajendra Jangid (Co-founder, Cars24 · Crashfree India) — reply-to address TBC
+**Attach:** `SATARK_Pod_Lead_Opportunity.pdf` (the "founder" one-pager, v3)
+**Send discipline:** individually addressed, no mail-merge tells, 10–15/day.
 
 ---
+
+## Subject
+`You made it to the CSE 2024 interview. I'm looking for nation-builders.`
 
 ## Body
 
 Dear {First Name},
 
-I'll be direct about why I'm writing to you. You cleared every stage of Civil Services 2024 except the final list — we found you on UPSC's PRATIBHA Setu, where we are a registered employer. We are looking for one person from exactly that pool to become the founder of a mission. This email is to see if it's you.
+I'm Gajendra — I co-founded Cars24, one of India's largest auto-tech companies. I'm writing to you personally because I'm looking for nation-builders: people who are genuinely made to serve. You made it to the interview stage of Civil Services 2024 — a tiny fraction of the country gets there. You didn't make the final list, but the qualities that took you that far are exactly what I need. We found you through UPSC's PRATIBHA Setu, where we're a registered employer.
 
-**The mission.** India loses more than 1.7 lakh people on its roads every year, and much of it traces to violations that were detected and never acted on. SATARK is our answer — an AI enforcement platform for traffic police, built by Crashfree India with Cars24's backing. It is live in Jaipur, Bengaluru and Gurugram: 5.4 lakh+ vehicles screened, ₹53 crore+ in unpaid dues identified, 600+ police interceptions recorded. On 4 August 2026 the Supreme Court directed the whole country to build exactly this mechanism. We had deployed it in June.
+Here's what I'm building, and why.
 
-**The seat.** We are taking SATARK to the 100 districts where India loses the most lives, by December 2027 — and hiring one person to set up and run that vertical like their own company. Your pipeline, your targets, your map of India. Police commissioners, transport secretaries, ministries — convince them, sign them, stay until officers are stopping vehicles. Not business development. Not a policy desk. Nobody hands you a plan on Monday. You work directly with Crashfree India's leadership and Cars24's founders. Gurugram base, heavy travel, in seat by mid-October.
+One of our most ambitious movements at Cars24 is **Crashfree India**. Every year, India records around five lakh road crashes and loses 1.7 lakh lives — the silent equivalent of a Boeing crashing every single day, leaving behind families pushed into poverty, children pulled out of school, and communities carrying sudden, irreversible loss.
 
-The attached one-pager has the full picture.
+Crashfree India exists because this devastation isn't accidental — it's systemic. And systemic problems don't yield to awareness posters, token campaigns or short-term CSR. This is not a CSR initiative; it's our long-term commitment to rebuild the systems that keep people safe. We're early, we're learning every day, and we know the road to zero fatalities is long. But we've begun, and we won't stop.
 
-**If this pulls at you, send me two things:**
+**One of those systems is enforcement — and it's where we've already proven something.** It started as a billboard: in Bengaluru, with the city traffic police, we put up India's first AI billboard at Trinity Circle. Cameras read a number plate, check it against government records, and flash pending challans, lapsed insurance and expired PUC on a screen in about ten seconds. It went viral. (Deccan Herald · Media4Growth — links in the one-pager / to be inserted)
+
+That billboard became **SATARK** — the same engine, now a live tool with traffic police that tells an officer which vehicle to stop, and why, in real time. It runs in Jaipur, Bengaluru and Gurugram: 5.4 lakh+ vehicles screened, ₹53 crore+ in unpaid dues surfaced, 600+ interceptions. The billboard was the ad. SATARK is the product.
+
+**Now the reason for this email.** I want to take SATARK to the 100 districts where India loses the most lives, by the end of 2027 — and I need one person to build and run that vertical like it's their own company. Not business development, not a policy desk. You'd sit across police commissioners, transport secretaries and ministries, convince them, sign them, and stay until officers are actually stopping vehicles. You'd have a small team of one or two strong people, and Cars24's engineering, installation and funding behind you. But nobody hands you a plan on Monday — the map of India is yours to draw.
+
+I won't pretend it's glamorous. It's slow rooms, cold follow-ups, months where nothing moves — and then a district goes live and vehicles get stopped that would have killed someone. That trade is the whole job.
+
+**If this pulls at you, two things:**
+
 1. **Your CV.**
-2. **A 4–5 minute video** (a link is fine): pick a problem you are genuinely passionate about — any problem this country ignores, any solution that hasn't seen the light of day — and convince me that India needs it. To show you the kind of thing we mean:
+2. **A 4–5 minute video** (a link is fine). Pick a problem you genuinely care about — anything this country looks away from — and convince me it matters. To show you the bar, not the topic:
    - Why is a footpath no city's KPI, when walking is how most Indians reach a bus stop?
-   - Why does a child on a two-wheeler still ride without a helmet, decades after the law was written?
+   - Why is a child riding pillion without a helmet still a normal sight?
    - Why do crash victims die in the golden hour with a trauma centre twenty minutes away?
    - Why do government school toilets get built and never maintained?
 
-   Those are ours. Yours can be anything — roads, or far from them. Back it with data. Anticipate my questions. We are not testing polish. We are testing conviction.
+   Those are mine. Yours can be anything — roads, or far from them. Back it with data. Anticipate my questions. **We are not testing polish. We are testing conviction.**
 
-I read every reply myself and respond within two days.
+Two dates, because we move fast and I want people who do too:
+- **Reply to acknowledge by 26 September, end of day** — even one line.
+- **Send the video by 28 September, end of day.**
 
-Regards,
-Akhtar Hussain
-Founder, Crashfree India · IIT Delhi '20
-akhtar@crashfreeindia.org · crashfreeindia.org
+Compensation, the day-to-day and the full picture are in the attached one-pager. Every reply comes to me.
 
-*Your details were accessed solely through UPSC PRATIBHA Setu for this employment evaluation and are not shared with anyone. Reply "no thanks" and we will not write again.*
+Warm regards,
+Gajendra Jangid
+Co-founder, Cars24 · Crashfree India
+{Gajendra's reply-to email} · crashfreeindia.org
+
+*Crashfree India runs under Vision Zero Trust (1st Floor, Plot G-2/Block B-1, Mohan Industrial Estate, New Delhi 110044). Your details were accessed only through UPSC PRATIBHA Setu for this role and are shared with no one. Reply "no thanks" and we won't write again.*
 
 ---
 
-## Notes for review
-- v2.1 change per Akhtar (24 Sep): video ask reframed as "a problem you are genuinely passionate about" + 4 seed examples (footpaths, child helmets, golden hour, school toilets) so candidates see the register expected. Examples kept qualitative — no statistics a candidate could challenge.
-- v2 changes per Akhtar (24 Sep): intention up front; crisp; **CV now required**; screening ask replaced with the 4–5 min conviction-pitch video (any ignored problem, data-backed, anticipate questions).
-- Numbers per Yuvraj's "SATARK – Sep common" deck (23 Sep).
-- Assessment impact: the video becomes Gate 0 scoring material (conviction · data rigor · anticipating counterarguments · clarity · time discipline). The 90-Day District Plan moves to shortlisted candidates only.
+## Notes / open decisions
+- **v3 (25 Sep):** rewritten in Gajendra's founder voice (Cars24 co-founder), mission-led opening using Akhtar's framing (Boeing analogy, systemic-not-CSR). Applied copywriter fixes: achievement framing ("made it to the interview"), "build and run it like your own company" (not "founder of a mission"), helmet line with no date claim, subject line added, comp → one-pager, VZT moved to signature.
+- **SC-order claim REMOVED.** Verified 25 Sep: the case is *In Re: Phalodi Accident* (2026 INSC 388, Suo Moto WP Civil No. 9/2025), main judgment 13 Apr 2026 with nationwide interim directions in Aug 2026 — about highway safety broadly (parking, encroachments, surveillance, ambulances, blackspots), NOT a mandate to build an ANPR platform. The earlier "4 Aug 2026 … 2026 INSC 793 … build exactly this mechanism" did not hold up. Do not reinstate without reading the order text.
+- **To finalise:** (1) Gajendra's reply-to address; (2) CFI/Cars24 reel URL to swap for the press links; (3) decision to hold video deadline at 28 Sep or move to 30 Sep for employed/serving GREENs; (4) internal confirm of the deck figures (5.4 lakh / ₹53 cr / 600+ / 3 cities).
+- **Reply handling:** "Every reply comes to me" must be true — decide whether Gajendra triages or the team does first-pass.
