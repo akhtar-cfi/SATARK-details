@@ -1,8 +1,8 @@
 # SATARK Pod Lead — Outreach Email (Draft v3 — Gajendra, founder-led)
 
 **Status:** DRAFT v3 for review — do not send until approved.
-**From:** Gajendra Jangid (Co-founder, Cars24 · Crashfree India) — reply-to address TBC
-**Attach:** `SATARK_Pod_Lead_Opportunity.pdf` (the "founder" one-pager, v3)
+**From:** Gajendra Jangid (Co-founder, Cars24 · Crashfree India) — Gajendra@crashfreeindia.org
+**Attach:** `SATARK_Pod_Lead_Brief.pdf` (two-page brief: page 1 role + process, page 2 About SATARK)
 **Send discipline:** individually addressed, no mail-merge tells, 10–15/day.
 
 ---
@@ -45,12 +45,12 @@ Two dates, because we move fast and I want people who do too:
 - **Reply to acknowledge by 26 September, end of day** — even one line.
 - **Send the video by 28 September, end of day.**
 
-Compensation, the day-to-day and the full picture are in the attached one-pager. Every reply comes to me.
+The full picture — the role, the process, and SATARK itself — is in the attached two-page brief. Every reply comes to me.
 
 Warm regards,
 Gajendra Jangid
 Co-founder, Cars24 · Crashfree India
-{Gajendra's reply-to email} · crashfreeindia.org
+Gajendra@crashfreeindia.org · crashfreeindia.org
 
 *Crashfree India runs under Vision Zero Trust (1st Floor, Plot G-2/Block B-1, Mohan Industrial Estate, New Delhi 110044). Your details were accessed only through UPSC PRATIBHA Setu for this role and are shared with no one. Reply "no thanks" and we won't write again.*
 
@@ -59,5 +59,5 @@ Co-founder, Cars24 · Crashfree India
 ## Notes / open decisions
 - **v3 (25 Sep):** rewritten in Gajendra's founder voice (Cars24 co-founder), mission-led opening using Akhtar's framing (Boeing analogy, systemic-not-CSR). Applied copywriter fixes: achievement framing ("made it to the interview"), "build and run it like your own company" (not "founder of a mission"), helmet line with no date claim, subject line added, comp → one-pager, VZT moved to signature.
 - **SC-order claim REMOVED.** Verified 25 Sep: the case is *In Re: Phalodi Accident* (2026 INSC 388, Suo Moto WP Civil No. 9/2025), main judgment 13 Apr 2026 with nationwide interim directions in Aug 2026 — about highway safety broadly (parking, encroachments, surveillance, ambulances, blackspots), NOT a mandate to build an ANPR platform. The earlier "4 Aug 2026 … 2026 INSC 793 … build exactly this mechanism" did not hold up. Do not reinstate without reading the order text.
-- **To finalise:** (1) Gajendra's reply-to address; (2) CFI/Cars24 reel URL to swap for the press links; (3) decision to hold video deadline at 28 Sep or move to 30 Sep for employed/serving GREENs; (4) internal confirm of the deck figures (5.4 lakh / ₹53 cr / 600+ / 3 cities).
+- **To finalise:** (1) CFI/Cars24 reel URL to swap for the press links; (2) decision to hold video deadline at 28 Sep or move to 30 Sep for employed/serving GREENs; (3) internal confirm of the deck figures (5.4 lakh / ₹53 cr / 600+ / 3 cities).
 - **Reply handling:** "Every reply comes to me" must be true — decide whether Gajendra triages or the team does first-pass.
