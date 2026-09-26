@@ -31,3 +31,10 @@ Screen for, in order of weight:
 - Bios are self-reported to UPSC; nothing is verified. Claims (founder roles especially) must be probed at Gate 1 and verified on LinkedIn.
 - "No employment" rows often mean full-time preparation, not low agency — the extracurricular record carries the burden for them.
 - Serving-officer gettability calls are assumptions, not facts; one honest phone call beats the flag.
+
+## Re-screen: past Chief of Staff applicants (26 Sep 2026)
+
+- **Source:** "Crashfree India | Chief of Staff Responses" export (367 rows; 351 unique by email). Candidate data stays in Drive only — sheet *Founding Role – Past CoS Applicants Screen (26 Sep 2026)* in the hiring folder.
+- **Pass 1 (form answers only):** each applicant scored 0–5 on government work, built/ran something, digital, impact and execution, then tiered GREEN / ORANGE+ / ORANGE / RED against the Founding Role (SATARK) brief. Result: 2 / 19 / 103 / 227.
+- **Pass 2 (CVs):** all 21 GREEN/ORANGE+ plus 11 borderline ORANGE were re-read against their actual CVs on Drive. Form claims not found in the CV were discounted. Final: 2 GREEN, 12 ORANGE+ (9 moved down, 2 moved up, 2 CVs unreadable).
+- **Watch-outs recorded per row:** ≥30 LPA current CTC, notes addressed to "Cashfree", duplicate submissions, and applicants from Aug–Sep 2026 whose answers reference a Jaipur operations posting (check that process before messaging them).
