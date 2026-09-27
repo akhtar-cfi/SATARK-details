@@ -1,10 +1,35 @@
-# Founding Role (SATARK) — LinkedIn post versions + past-applicant message
+# Expansion Lead (SATARK) — LinkedIn post + past-applicant message
 
-**Status:** DRAFT v4 for review — do not post or send until approved.
-**Images:** `Founding_Lead_Poster.png` (simple), `Founding_Lead_OnePager.png` / `.pdf` (Generalist-format JD).
-**Subject line everywhere:** "Founding Role" (one-pager updated to match on 26 Sep).
+**Status:** DRAFT v5 for review — do not post or send until approved.
+**Images:** `Expansion_Lead_Poster.png` (simple), `Expansion_Lead_OnePager.png` / `.pdf` (Generalist-format JD).
+**Subject line for LinkedIn applicants:** "Expansion Lead".
+**v5 (27 Sep):** per Akhtar — dropped "Founding Lead" and the "khaki" hook; plainer, less marketing language; "For builders driven by impact, not titles."
 
 ---
+
+## V5 — Main post (Gajendra) — pairs with poster + one-pager
+
+I'm hiring an Expansion Lead at Crashfree India, Cars24's long-term commitment to road safety.
+
+The role: lead the expansion of SATARK, our AI enforcement tool, beyond the three cities where it runs today. SATARK reads number plates, checks them against government records, and tells traffic police which vehicle to stop, and why, in about ten seconds. It started as the Challan Billboard at Bengaluru's Trinity Circle.
+
+Why it matters: India loses around 1.7 lakh people on its roads every year. Much of it is systemic. Violations get caught, challans get issued, and then nothing happens.
+
+What you'll do: set the expansion plan, sign partnerships with police, transport departments and state governments, run each launch with our tech team, and stay until officers use it every day. Track the data and decide where we go next.
+
+Who it's for: builders driven by impact. You've worked with government, built or run something of your own, are comfortable with data and technology, and care more about impact than titles.
+
+What you get: a small team, funding, Cars24's tech, and a direct line to Cars24 and Crashfree India leadership.
+
+To apply, email gajendra@crashfreeindia.org with the subject "Expansion Lead": your CV and a 4-minute video on a problem India looks away from, and why it matters.
+
+We're not testing polish. We're testing conviction.
+
+Gurugram, with travel across India.
+
+---
+
+## Earlier versions (v4, subject "Founding Role")
 
 ## V1 — Akhtar's draft, polished (main post; pairs with the poster)
 
