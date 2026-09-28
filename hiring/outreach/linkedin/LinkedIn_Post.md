@@ -1,17 +1,19 @@
-# Expansion Lead (SATARK) — LinkedIn post + past-applicant message
+# Builder (SATARK) — LinkedIn post + past-applicant message
 
-**Status:** DRAFT v5 for review — do not post or send until approved.
-**Images:** `Expansion_Lead_Poster.png` (simple), `Expansion_Lead_OnePager.png` / `.pdf` (Generalist-format JD).
-**Subject line for LinkedIn applicants:** "Expansion Lead".
-**v5 (27 Sep):** per Akhtar — dropped "Founding Lead" and the "khaki" hook; plainer, less marketing language; "For builders driven by impact, not titles."
+**Status:** DRAFT v6 for review — do not post or send until approved.
+**Images:** `Builder_Poster.png` (simple), `Builder_OnePager.png` / `.pdf` (Generalist-format JD).
+**Subject line for LinkedIn applicants:** "Builder".
+**v6 (28 Sep):** per Akhtar — title "Builder" (not "Expansion Lead"); the framing is "build this vertical like a founder"; copy stays plain.
 
 ---
 
-## V5 — Main post (Gajendra) — pairs with poster + one-pager
+## V6 — Main post (Gajendra) — pairs with poster + one-pager
 
-I'm hiring an Expansion Lead at Crashfree India, Cars24's long-term commitment to road safety.
+Build it like a founder. We'll back you like one.
 
-The role: lead the expansion of SATARK, our AI enforcement tool, beyond the three cities where it runs today. SATARK reads number plates, checks them against government records, and tells traffic police which vehicle to stop, and why, in about ten seconds. It started as the Challan Billboard at Bengaluru's Trinity Circle.
+I'm hiring a builder at Crashfree India, Cars24's long-term commitment to road safety: someone to build and run a vertical like it's their own company.
+
+The vertical is SATARK, our AI enforcement tool. It reads number plates, checks them against government records, and tells traffic police which vehicle to stop, and why, in about ten seconds. It started as the Challan Billboard at Bengaluru's Trinity Circle and runs today with police in three cities. Your job is to take it across India.
 
 Why it matters: India loses around 1.7 lakh people on its roads every year. Much of it is systemic. Violations get caught, challans get issued, and then nothing happens.
 
@@ -21,7 +23,7 @@ Who it's for: builders driven by impact. You've worked with government, built or
 
 What you get: a small team, funding, Cars24's tech, and a direct line to Cars24 and Crashfree India leadership.
 
-To apply, email gajendra@crashfreeindia.org with the subject "Expansion Lead": your CV and a 4-minute video on a problem India looks away from, and why it matters.
+To apply, email gajendra@crashfreeindia.org with the subject "Builder": your CV and a 4-minute video on a problem India looks away from, and why it matters.
 
 We're not testing polish. We're testing conviction.
 
