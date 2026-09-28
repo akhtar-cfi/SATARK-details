@@ -1,9 +1,9 @@
 # Builder (SATARK) — LinkedIn post + past-applicant message
 
 **Status:** DRAFT v7 for review — do not post or send until approved.
-**Images (post both, in order):**  (Build it like a founder) →  (details + QR). Or upload  as a LinkedIn document post.
+**Images (post both, in order):** `Builder_Page1.png` (Build it like a founder) → `Builder_Page2.png` (details + QR). Or upload `Builder_2pager.pdf` as a LinkedIn document post.
 **Apply via form:** https://docs.google.com/forms/d/e/1FAIpQLSca87XK-RDxZc6WWM8XZ6NGoBywC8NjU8Jlx6IDQDjGZrZNsg/viewform
-**QR:**  /  — static QR encoding the form URL directly (no redirect service), so it does not expire; it works as long as the form stays live and accepting responses. Verified to decode from the rendered page, including at phone size.
+**QR:** `apply_qr.png` / `apply_qr.svg` — static QR encoding the form URL directly (no redirect service), so it does not expire; it works as long as the form stays live and accepting responses. Verified to decode from the rendered page, including at phone size.
 **v7 (28 Sep):** two pages; front line "Take AI traffic enforcement to 100+ cities across India, and bring road crashes down."; applications move to the Google Form.
 
 ---
