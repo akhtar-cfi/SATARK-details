@@ -4,7 +4,7 @@
 **Images (post both, in order):** `Builder_Page1.png` (Build it like a founder) → `Builder_Page2.png` (details + QR). Or upload `Builder_2pager.pdf` as a LinkedIn document post.
 **Apply via form:** https://docs.google.com/forms/d/e/1FAIpQLSca87XK-RDxZc6WWM8XZ6NGoBywC8NjU8Jlx6IDQDjGZrZNsg/viewform
 **QR:** `apply_qr.png` / `apply_qr.svg` — static QR encoding the form URL directly (no redirect service), so it does not expire; it works as long as the form stays live and accepting responses. Verified to decode from the rendered page, including at phone size.
-**v7 (28 Sep):** two pages; front line "Take AI traffic enforcement to 100+ cities across India, and bring road crashes down."; applications move to the Google Form.
+**v7 (28 Sep):** two pages; front line "Take AI enforcement tech to 100 districts across India, and bring road crashes down." (29 Sep: "tool" → "AI enforcement tech", "100+ cities" → "100 districts" everywhere); applications move to the Google Form.
 
 ---
 
@@ -14,7 +14,7 @@ Build it like a founder. We'll back you like one.
 
 I'm hiring a builder at Crashfree India, Cars24's long-term commitment to road safety: someone to build and run a vertical like it's their own company.
 
-The vertical is SATARK, our AI enforcement tool. It reads number plates, checks them against government records, and tells traffic police which vehicle to stop, and why, in about ten seconds. It started as the Challan Billboard at Bengaluru's Trinity Circle and runs today with police in three cities. Your job is to take it to 100+ cities across India.
+The vertical is SATARK, our AI enforcement tech. It reads number plates, checks them against government records, and tells traffic police which vehicle to stop, and why, in about ten seconds. It started as the Challan Billboard at Bengaluru's Trinity Circle and runs today with police in three cities. Your job is to take it to 100 districts across India.
 
 Why it matters: India loses around 1.7 lakh people on its roads every year. Much of it is systemic. Violations get caught, challans get issued, and then nothing happens.
 
@@ -41,7 +41,7 @@ Build it like a founder. We'll back you like one.
 
 I'm hiring someone to lead the national expansion of SATARK at Crashfree India, Cars24's long-term commitment to road safety.
 
-SATARK is an AI enforcement tool that tells traffic police which vehicle to stop, and why, in about ten seconds. It began as the Challan Billboard at Bengaluru's Trinity Circle. Today it runs with police in three cities. Next, it goes national.
+SATARK is AI enforcement tech that tells traffic police which vehicle to stop, and why, in about ten seconds. It began as the Challan Billboard at Bengaluru's Trinity Circle. Today it runs with police in three cities. Next, it goes national.
 
 Why it matters: India loses around 1.7 lakh people on its roads every year, and much of it is systemic. Violations get caught, challans get issued, and then nothing happens.
 
@@ -61,7 +61,7 @@ Gurugram, with travel across India.
 
 Build it like a founder. We'll back you like one.
 
-I'm hiring someone to take SATARK, our AI traffic-enforcement tool, from three cities to the rest of India. It tells police which vehicle to stop, and why, in about ten seconds.
+I'm hiring someone to take SATARK, our AI enforcement tech, from three cities to the rest of India. It tells police which vehicle to stop, and why, in about ten seconds.
 
 You'd run it like your own startup: win over police chiefs and state governments, launch cities, and stay until officers use it every day. A team, funding and Cars24 are behind you.
 
@@ -73,7 +73,7 @@ Gurugram, with travel across India.
 
 A billboard in Bengaluru once read passing number plates and showed drivers their pending challans in about ten seconds. It went viral.
 
-We turned that idea into SATARK, a tool that tells traffic police which vehicle to stop, and why. It now runs with police in three cities.
+We turned that idea into SATARK, AI enforcement tech that tells traffic police which vehicle to stop, and why. It now runs with police in three cities.
 
 Now I need one person to take it across India and run it like their own startup. You'll sit across police chiefs and state governments, sign them, launch cities, and stay until officers use it every day. You'll have a team, funding, Cars24's tech and a direct line to leadership.
 
@@ -85,7 +85,7 @@ We're not testing polish. We're testing conviction.
 
 There's more than one way to serve the country.
 
-I'm hiring someone to lead SATARK, Crashfree India's AI enforcement tool, from three cities to the rest of India. It tells traffic police which vehicle to stop, and why, in about ten seconds, turning records that already exist into action on the road.
+I'm hiring someone to lead SATARK, Crashfree India's AI enforcement tech, from three cities to the rest of India. It tells traffic police which vehicle to stop, and why, in about ten seconds, turning records that already exist into action on the road.
 
 The job is part founder, part diplomat: win over police chiefs and state governments, launch cities, stay until officers use it every day, and decide where we go next. A team, funding and Cars24 are behind you.
 
@@ -103,7 +103,7 @@ Hi {First name},
 
 Earlier this year you applied for the Chief of Staff role at Crashfree India. We didn't take that forward, but a new role has opened that may suit you better, and your application made us think of you.
 
-We're hiring someone to lead the national expansion of SATARK, our AI enforcement tool that tells traffic police which vehicle to stop, and why. It began as the Challan Billboard in Bengaluru and now runs with police in three cities. The role is to run it like your own startup, with a team, funding and Cars24 behind you.
+We're hiring someone to lead the national expansion of SATARK, our AI enforcement tech that tells traffic police which vehicle to stop, and why. It began as the Challan Billboard in Bengaluru and now runs with police in three cities. The role is to run it like your own startup, with a team, funding and Cars24 behind you.
 
 Details are in the attached one-pager. If it's for you, write to gajendra@crashfreeindia.org by {date} with the subject "Founding Role": your CV and a 4-minute video on a problem India looks away from.
 
@@ -114,7 +114,7 @@ Crashfree India
 
 **LinkedIn DM / WhatsApp (short)**
 
-Hi {First name}, you applied for our Chief of Staff role earlier this year. We've since opened a founding role: lead SATARK, our AI traffic-enforcement tool, across India, with a team, funding and Cars24 behind you. Your application made us think of you. Details: {post link}. To apply, send your CV and a 4-minute video on a problem India looks away from to gajendra@crashfreeindia.org, subject "Founding Role", by {date}.
+Hi {First name}, you applied for our Chief of Staff role earlier this year. We've since opened a founding role: lead SATARK, our AI enforcement tech, across India, with a team, funding and Cars24 behind you. Your application made us think of you. Details: {post link}. To apply, send your CV and a 4-minute video on a problem India looks away from to gajendra@crashfreeindia.org, subject "Founding Role", by {date}.
 
 ---
 
