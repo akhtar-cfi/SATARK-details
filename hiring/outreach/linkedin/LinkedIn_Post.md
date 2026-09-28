@@ -4,7 +4,7 @@
 **Images (post both, in order):** `Builder_Page1.png` (Build it like a founder) → `Builder_Page2.png` (details + QR). Or upload `Builder_2pager.pdf` as a LinkedIn document post.
 **Apply via form:** https://docs.google.com/forms/d/e/1FAIpQLSca87XK-RDxZc6WWM8XZ6NGoBywC8NjU8Jlx6IDQDjGZrZNsg/viewform
 **QR:** `apply_qr.png` / `apply_qr.svg` — static QR encoding the form URL directly (no redirect service), so it does not expire; it works as long as the form stays live and accepting responses. Verified to decode from the rendered page, including at phone size.
-**v7 (28 Sep):** two pages; front line "Take AI enforcement tech to 100 districts across India, and bring road crashes down." (29 Sep: "tool" → "AI enforcement tech", "100+ cities" → "100 districts" everywhere); applications move to the Google Form.
+**v7 (28 Sep):** two pages; front line "Take AI enforcement tech to 100 districts across India, and bring road crashes down." (29 Sep: "tool" → "AI enforcement tech", "100+ cities" → "100 districts" everywhere; video ask removed — apply via the form only, queries to akhtar@crashfreeindia.org); applications move to the Google Form.
 
 ---
 
@@ -25,9 +25,7 @@ Who it's for: builders driven by impact. You've worked with government, built or
 What you get: a small team, funding, Cars24's tech, and a direct line to Cars24 and Crashfree India leadership.
 
 Apply here: https://docs.google.com/forms/d/e/1FAIpQLSca87XK-RDxZc6WWM8XZ6NGoBywC8NjU8Jlx6IDQDjGZrZNsg/viewform
-Share your CV and a short note on why you fit. A plus: a 4-minute video on a problem India looks away from.
-
-We're not testing polish. We're testing conviction.
+Any questions? Write to akhtar@crashfreeindia.org
 
 Gurugram, with travel across India.
 
