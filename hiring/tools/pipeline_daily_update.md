@@ -106,6 +106,8 @@ Closed (<n>): <n> after screening/interview, <n> LinkedIn not taken forward
 3. Add Yash interview date + outcome for <names> (column T)
 4. Update only this sheet: https://docs.google.com/spreadsheets/d/1HcnKc_ihN2UiUT6149Y4hfB263T5KLmDerGuBwZLNB0/edit
 
+_Compiled automatically every day at 6 PM IST from Gajendra's inbox, LinkedIn applications, this channel and Yuvraj's screening sheet._
+
 FINISH
 End with a 3-line summary: rows added/updated, drafts created (names), where the Slack draft is. Nothing else.
 ```
