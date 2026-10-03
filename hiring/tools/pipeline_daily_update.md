@@ -41,9 +41,9 @@ THE PIPELINE TAB in sheet 1HcnKc_ihN2UiUT6149Y4hfB263T5KLmDerGuBwZLNB0 (one row 
 Columns: A Name | B Source (exactly one of: UPSC, Past applicant, LinkedIn, Direct, Direct + LinkedIn) | C Email | D Phone (text, write with a leading ') | E LinkedIn | F Current org / role | G College | H Current CTC: ALWAYS LEAVE EMPTY (compensation is private, see COMPENSATION) | I Availability | J Replied / applied on (date, first reply or form timestamp) | K What they sent (one line) | L CV (=HYPERLINK(url,"CV") or =HYPERLINK(thread,"CV in email")) | M Video (=HYPERLINK(url,"Video")) | N Email thread (=HYPERLINK(url,"Thread")) | O Our screen | P Our read (one line) | Q Screening call (Yuvraj: Done / Scheduled / Not reached) | R Next round? (Yuvraj: Yes / No / Hold / Other role) | S Yuvraj remarks | T Interview with Yash (round 2: status first, then review; "Dropped" -> Closed, "assignment" -> Assignment round) | U Founders round | V Stage (formula) | W Next step | X Owner (Yuvraj / Akhtar / Gajju / Yash) | Y Due (date) | Z Gajju draft | AA Auto status | AB Last synced
 - You own A–P, Z, AA, AB. The team owns Q–U and W–Y. V is a formula.
 - COMPENSATION never goes into the Pipeline sheet (Yuvraj can see it): not in H, not inside F/K/P text (drop salary figures from role lines, "CTC 50L" etc.). Write any candidate-stated CTC / salary for a new person to the private sheet 19639R-zHO3pIzil9roPBl2pOhufZorrEfBJnkDjYEJc, tab "Compensation" (Name | Email | Source | Current / last compensation as stated), appended after the last row. Never share that file or mention figures in Slack.
-- Stages in V: Founders round · Assignment round · Interview with Yash · Next round · Other role · Screened · To be confirmed (with Yuvraj, call still to happen, incl. not reached) · Materials in · Applied (form) · Replied, materials pending · Asked a question · Closed · Declined · Bounced · No reply. The basic filter on V shows only the screening stages; leave it on.
+- Stages in V: Founders round · Assignment round · Interview with Yash · Next round · Other role · Screened · To be confirmed (with Yuvraj, call still to happen, incl. not reached) · Materials in · Applied (form) · Replied, materials pending · Asked a question · Closed · Declined · Bounced · No reply. 
 - Auto status (AA) values, exactly: No reply · Bounced · Declined · Asked a question · Replied, materials pending · Materials in · Applied (form) · With Yuvraj · Closed (Akhtar red) · Check. "With Yuvraj" wins once the person is handed over (Slack hand-off, a Fwd: to yuvraj.yadav@, or any value in Q/R). Write the Closed value as just "Closed".
-- The sheet's basic filter shows only screening-stage rows; a filter does not affect reads or writes by range, so leave it on.
+- The sheet opens filtered to 'currently considered' (Stage not Closed/Declined/Bounced/No reply), with saved filter views 'Currently considered', 'In screening (Yuvraj)', 'Next round (...)', 'Everyone'. Filters don't affect reads or writes by range; leave them on.
 - For a NEW person, append a row after the last filled row and write V as:
   =IF(LEN($An)=0,"",IFS(LEN($Un),"Founders round",REGEXMATCH(LOWER($Tn),"dropped"),"Closed",REGEXMATCH(LOWER($Tn),"assignment"),"Assignment round",LEN($Tn),"Interview with Yash",$Rn="Yes","Next round",$Rn="Other role","Other role",$Rn="No","Closed",$Qn="Done","Screened",OR($AAn="With Yuvraj",$Qn="Not reached",$Qn="To be confirmed"),"To be confirmed",TRUE,$AAn))
   with n = that row number. Set P to one plain line on the person (government work, built or ran something, impact motive).
@@ -83,20 +83,28 @@ YUVRAJ'S ACTIONS (from the sheet)
 - Any row with X = Yuvraj and Y before today -> overdue.
 
 SLACK DRAFT (crisp: Gajju's overview, then Yuvraj's actions; nothing else)
+Tally rules (the numbers must add up; check before drafting):
+- Reached by email = replied + no reply + bounced.
+- Engaged = email replies + LinkedIn applications = in screening + on hold + closed + declined.
+- In screening = Stage in (To be confirmed, Screened, Next round, Interview with Yash, Assignment round, Founders round, Other role); "next round" in the text = Next round + Interview with Yash + Assignment round + Founders round; couldn't connect = To be confirmed with Q = Not reached; to call = the rest of To be confirmed.
+- On hold = Materials in (not forwarded), Asked a question, Replied, materials pending, Applied (form) awaiting Akhtar's review.
+- Next-round names carry a CV link: column L's Drive link; if the CV is only an email attachment, link the candidate's email (Gmail link, opens for Gajju).
+
 Create ONE draft with slack_send_message_draft in channel C0C5Q4H7ZC3 (top level). If it fails with draft_already_exists (an earlier draft is still unsent), create it in Akhtar's own DM (channel_id U08LN3C3E91) instead. Use exactly this shape, numbers from 'Funnel & Actions', omit any empty line:
 
 **SATARK Builder hiring: <d Mon>**
-Reached <n> by email · <n> engaged (<n> email replies, <n> LinkedIn applications)
-In screening: <n>. Assignment round <names> · Yash interview <names> · Next round <names> · To be confirmed <n>
-Closed <n> · Declined <n> · No reply <n>   (add "· Since <last log date>: +<n> replies, +<n> applications, +<n> screened" when there is a previous log row)
-<@U0545HQJQ>: <n> new reply drafts in your Gmail Drafts to review and send. <One line only for a decision that is his, e.g. a "(confirm first)" draft or a founders round.>
+Reached <n> by email: <n> replied · <n> no reply · <n> bounced. Plus <n> LinkedIn applications
+<n> engaged (<n> email + <n> LinkedIn) = <n> in screening + <n> on hold + <n> closed + <n> declined
+In screening (<n>): <n> in next round, <Name> ([CV](<link>)) and <Name> ([CV](<link>)) · <n> couldn't connect · <n> to call
+On hold (<n>): <Name> (<reason, 3-5 words>), ...
+Closed (<n>): <n> after screening/interview, <n> LinkedIn not taken forward
+(Optional, only if there is a previous Daily log row: "Since <date>: +<n> replies · +<n> applications · +<n> screened")
 
 **<@U095L5J7HFH>, actions**
-1. To be confirmed, call: <names>; re-try: <names> (details, CVs, videos in the sheet)
-2. Yash interviews: <names and what is missing>
-3. Assignment round: <names, what to track>
-4. Overdue: <names>
-Sheet: https://docs.google.com/spreadsheets/d/1HcnKc_ihN2UiUT6149Y4hfB263T5KLmDerGuBwZLNB0/edit
+1. Call and schedule interviews: <names> (details, CVs, videos in the sheet)
+2. Re-try: <names>
+3. Add Yash interview date + outcome for <names> (column T)
+4. Update only this sheet: https://docs.google.com/spreadsheets/d/1HcnKc_ihN2UiUT6149Y4hfB263T5KLmDerGuBwZLNB0/edit
 
 FINISH
 End with a 3-line summary: rows added/updated, drafts created (names), where the Slack draft is. Nothing else.
