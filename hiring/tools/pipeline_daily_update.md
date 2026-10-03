@@ -37,13 +37,15 @@ SOURCES
 4. Yuvraj's old screening sheet 17gtz6vis2Z_umj1EOaWv9gq3NMtneBSZnJZdrYqDNpw (Sheet1: Candidate, Contact no, Screening call, Moving to next round, Remarks, Last updated). Transition only: copy anything there into the matching Pipeline row's Q, R, S ONLY where those cells are empty. Match by phone (last 10 digits), then name.
 5. Slack hand-off thread: channel C0C5Q4H7ZC3, thread ts 1790761222.180759, plus top-level messages in C0C5Q4H7ZC3 since the last run. A message from Akhtar like "Candidate N: ..." hands that person to Yuvraj. Also note anything Yuvraj says about screenings or Yash interviews.
 
-THE PIPELINE TAB (one row per person; key = email, then phone last 10 digits, then name)
+THE PIPELINE TAB in sheet 1HcnKc_ihN2UiUT6149Y4hfB263T5KLmDerGuBwZLNB0 (one row per person; key = email, then phone last 10 digits, then name)
 Columns: A Name | B Source (exactly one of: UPSC, Past applicant, LinkedIn, Direct, Direct + LinkedIn) | C Email | D Phone (text, write with a leading ') | E LinkedIn | F Current org / role | G College | H Current CTC (text, leading ') | I Availability | J Replied / applied on (date, first reply or form timestamp) | K What they sent (one line) | L CV (=HYPERLINK(url,"CV") or =HYPERLINK(thread,"CV in email")) | M Video (=HYPERLINK(url,"Video")) | N Email thread (=HYPERLINK(url,"Thread")) | O Our screen | P Our read (one line) | Q Screening call (Yuvraj: Done / Scheduled / Not reached) | R Next round? (Yuvraj: Yes / No / Hold / Other role) | S Yuvraj remarks | T Interview with Yash | U Founders round | V Stage (formula) | W Next step | X Owner (Yuvraj / Akhtar / Gajju / Yash) | Y Due (date) | Z Gajju draft | AA Auto status | AB Last synced
 - You own A–P, Z, AA, AB. The team owns Q–U and W–Y. V is a formula.
 - Auto status (AA) values, exactly: No reply · Bounced · Declined · Asked a question · Replied, materials pending · Materials in · Applied (form) · With Yuvraj · Check. "With Yuvraj" wins once the person is handed over (Slack hand-off, a Fwd: to yuvraj.yadav@, or any value in Q/R).
 - For a NEW person, append a row after the last filled row and write V as:
   =IF(LEN($An)=0,"",IFS(LEN($Un),"Founders round",LEN($Tn),"Interview with Yash",$Rn="Yes","Next round",$Rn="Other role","Other role",$Rn="No","Closed",$Qn="Not reached","Couldn't connect",$Qn="Done","Screened",TRUE,$AAn))
-  with n = that row number. Also set O and P: for a LinkedIn/direct applicant, give a form-only tier (GREEN / ORANGE+ / ORANGE / RED, suffix "(form only)") on: government work, has built or run something of their own, digital comfort, impact motive, execution; and one plain line why. Seed W/X/Y only for new rows: GREEN or ORANGE+ -> "Screening call", Yuvraj, today+3; ORANGE/RED -> "Review CV; hand to Yuvraj if fit" (RED: "Form read: RED. Confirm close or screen"), Akhtar, today+3.
+  with n = that row number. Set P to one plain line on the person (government work, built or ran something, impact motive).
+- LINKEDIN DECISIONS ARE AKHTAR'S: he colours the row in the form responses sheet. Read the background colour of the Timestamp cell (get_spreadsheet with includeGridData, field sheets.data.rowData.values.effectiveFormat.backgroundColor). Green (green channel clearly highest) = take forward; red (red = 1, green and blue about 0) = not taken forward; white/none = not reviewed yet. Write O as "Akhtar: GREEN (take forward)", "Akhtar: RED" or "Awaiting Akhtar's review". For an existing row whose O changed from "Awaiting…": GREEN -> forward to Yuvraj (below); RED -> AA = "Closed", W = "Send close (draft ready)", X = Gajju, plus a close draft. Never decide green/red yourself.
+- FORWARD TO YUVRAJ: any email candidate with CV and/or video in (AA = "Materials in") and any LinkedIn applicant marked green, who is not yet with Yuvraj, is forwarded: AA = "With Yuvraj", W = "Screening call", X = Yuvraj, Y = today+3 (only fill W/X/Y if empty), and a "Yuvraj will call" draft. Exception: if they said they can't join for months, do not forward; write W = "Not forwarded: <reason>" and name them in the update.
 - For an EXISTING person, refresh only A–P, Z, AA, AB when something changed. Write AB as text: '<d Mon yyyy, HH:MM> IST.
 - Write with the Sheets connector's update_values (it parses like typing: formulas start with =, keep text with a leading ').
 
@@ -58,6 +60,7 @@ Templates (keep them this short; adapt one clause to what they actually sent):
 - Next round (R newly Yes): "Thank you for <materials> and the conversation with Yuvraj. We'd like to take you to the next round: a longer conversation with our team. Yuvraj will be in touch to set a time."
 - Close (R newly No): "Thank you for the time you gave us: <materials, the conversation with Yuvraj>. We won't be taking your application forward for this role. I appreciate the thought you put into it, and I wish you the best with what comes next."
 - Other role (R newly Other role): say SATARK isn't the fit and ask if they're open to a conversation about the other role Yuvraj named. Mark Z "(confirm first)".
+- Not taken forward (Akhtar red): "Thank you for applying for the Builder role at Crashfree India. We've reviewed your application and won't be taking it forward for this role. I appreciate the interest, and I wish you the best."
 - Declined: one or two warm lines of thanks, specific to what they said.
 - Materials pending: "Just checking in: we haven't received your CV and video yet. If you're still interested, please share them on this thread in the next few days."
 - A question you can't answer from the role brief (comp, timing, part-time): acknowledge and say it's covered in the first conversation; do not invent answers. Compensation is discussed in the first conversation.
@@ -69,40 +72,27 @@ DAILY LOG + FUNNEL
 - Append one row to 'Daily log' (A..P): date (yyyy-mm-dd), Reached by email, Engaged, Handed to Yuvraj (rows with AA = With Yuvraj or any value in Q/R), Screening done (Q = Done), Next round, Interview with Yash, Founders round, Other role, Closed, Declined, Bounced, No reply, Rows in Pipeline, Drafts created this run, Notes (one line: anything odd). If a row for today already exists, update it instead of adding another.
 - Deltas = today's row minus the previous row.
 
-STANDOUTS (2-3, never padded)
-Pick in this order: Yuvraj "Yes" or a positive Yash interview; then GREEN / ORANGE+ screen with CV and video in; then a strong video or reply. One honest line each on why, plus its stage. Say "claims not yet verified" where true. If nobody qualifies, say so.
-
-YUVRAJ'S TO-DO (from the sheet)
-- Stage "With Yuvraj" and Q empty -> screening call.
+YUVRAJ'S ACTIONS (from the sheet)
+- Stage "With Yuvraj" and Q empty -> call.
 - Stage "Couldn't connect" -> re-try.
-- Stage "Next round" with T empty -> set up / record the Yash interview.
-- T filled but no outcome words -> add the outcome.
+- Stage "Next round" with T empty -> add Yash interview date + outcome in column T.
 - Any row with X = Yuvraj and Y before today -> overdue.
 
-SLACK DRAFT
-Create ONE draft with slack_send_message_draft in channel C0C5Q4H7ZC3 (top level). If it fails with draft_already_exists (yesterday's draft is still unsent), create it instead in Akhtar's own DM (channel_id U08LN3C3E91) and begin it with "(#satark-hiring already had an unsent draft, so this is here.)". Format (standard markdown, short):
+SLACK DRAFT (crisp: Gajju's overview, then Yuvraj's actions; nothing else)
+Create ONE draft with slack_send_message_draft in channel C0C5Q4H7ZC3 (top level). If it fails with draft_already_exists (an earlier draft is still unsent), create it in Akhtar's own DM (channel_id U08LN3C3E91) instead. Use exactly this shape, numbers from 'Funnel & Actions', omit any empty line:
 
-**SATARK Builder: hiring funnel, <d Mon>**
-Reached <n> by email (UPSC <a> · past CoS applicants <b>) · <bounced> bounced
-Engaged <n>: <email replies> email replies (UPSC <a> · past applicants <b>) + <form> LinkedIn form applications
-With Yuvraj <n>: <next round> next round · <other role> other role · <closed> closed · <couldn't connect> couldn't connect · <not yet called> not yet called
-Since <previous log date>: +<new replies> replies · +<new applications> applications · +<screenings> screenings · +<next round> to next round
-(omit the "Since" line if there is no previous log row)
+**SATARK Builder hiring: <d Mon>**
+Reached <n> by email · <n> engaged (<n> email replies, <n> LinkedIn applications)
+With Yuvraj: <n> in screening. <n> in next round (<names>), <n> couldn't connect, <n> to call
+Closed <n> · Declined <n> · No reply <n>   (add "· Since <last log date>: +<n> replies, +<n> applications, +<n> screened" when there is a previous log row)
+<@U0545HQJQ>: <n> new reply drafts in your Gmail Drafts to review and send. <One line only for a decision that is his, e.g. a "(confirm first)" draft or a founders round.>
 
-**Worth your review**
-• *<Name>* (<source>): <why, one line>. Next: <next step>.
-
-**<@U095L5J7HFH>, for <tomorrow or Monday>**
-1. Screening calls: <names>
+**<@U095L5J7HFH>, actions**
+1. Call: <names> (details, CVs, videos in the sheet)
 2. Re-try: <names>
-3. Yash interviews: <names and what's missing>
-4. Overdue: <names>   (omit empty items)
-
-**<@U0545HQJQ>, decisions / to do**
-• <n> new reply drafts in your Gmail Drafts: review and send. <List any marked "(confirm first)" and why.>
-• <Any decision only Gajju/Akhtar can make, e.g. founders round for X.>
-
-Sheet (single source of truth): https://docs.google.com/spreadsheets/d/1HcnKc_ihN2UiUT6149Y4hfB263T5KLmDerGuBwZLNB0/edit
+3. Add Yash interview date + outcome for <names> (column T)
+4. Overdue: <names>
+Sheet: https://docs.google.com/spreadsheets/d/1HcnKc_ihN2UiUT6149Y4hfB263T5KLmDerGuBwZLNB0/edit
 
 FINISH
 End with a 3-line summary: rows added/updated, drafts created (names), where the Slack draft is. Nothing else.
