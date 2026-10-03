@@ -7,7 +7,7 @@
 | Thing | Location |
 |---|---|
 | Pipeline sheet (single source of truth) | `1HcnKc_ihN2UiUT6149Y4hfB263T5KLmDerGuBwZLNB0`, tabs `Pipeline`, `Funnel & Actions`, `Daily log` |
-| Routine | "SATARK hiring daily update" (Claude routine, cron `CRON_TZ=Asia/Kolkata 51 17 * * *`, connectors Gmail, Google Drive, Google Sheets, Slack) |
+| Routine | "SATARK hiring daily update" (`trig_016Kd4H7VAW7gZdB218swweQ`, cron `CRON_TZ=Asia/Kolkata 51 17 * * *`). It fires into the Claude session that built this, because that session holds the Gmail, Drive, Sheets and Slack connectors; routines created from that session cannot carry connectors into a fresh session. |
 | Slack | #satark-hiring `C0C5Q4H7ZC3`; hand-off thread ts `1790761222.180759` |
 
 **To change the routine:** edit the prompt below, then update the routine's prompt (`update_trigger`) so the two stay the same.
@@ -40,7 +40,8 @@ SOURCES
 THE PIPELINE TAB in sheet 1HcnKc_ihN2UiUT6149Y4hfB263T5KLmDerGuBwZLNB0 (one row per person; key = email, then phone last 10 digits, then name)
 Columns: A Name | B Source (exactly one of: UPSC, Past applicant, LinkedIn, Direct, Direct + LinkedIn) | C Email | D Phone (text, write with a leading ') | E LinkedIn | F Current org / role | G College | H Current CTC (text, leading ') | I Availability | J Replied / applied on (date, first reply or form timestamp) | K What they sent (one line) | L CV (=HYPERLINK(url,"CV") or =HYPERLINK(thread,"CV in email")) | M Video (=HYPERLINK(url,"Video")) | N Email thread (=HYPERLINK(url,"Thread")) | O Our screen | P Our read (one line) | Q Screening call (Yuvraj: Done / Scheduled / Not reached) | R Next round? (Yuvraj: Yes / No / Hold / Other role) | S Yuvraj remarks | T Interview with Yash | U Founders round | V Stage (formula) | W Next step | X Owner (Yuvraj / Akhtar / Gajju / Yash) | Y Due (date) | Z Gajju draft | AA Auto status | AB Last synced
 - You own A–P, Z, AA, AB. The team owns Q–U and W–Y. V is a formula.
-- Auto status (AA) values, exactly: No reply · Bounced · Declined · Asked a question · Replied, materials pending · Materials in · Applied (form) · With Yuvraj · Check. "With Yuvraj" wins once the person is handed over (Slack hand-off, a Fwd: to yuvraj.yadav@, or any value in Q/R).
+- Auto status (AA) values, exactly: No reply · Bounced · Declined · Asked a question · Replied, materials pending · Materials in · Applied (form) · With Yuvraj · Closed (Akhtar red) · Check. "With Yuvraj" wins once the person is handed over (Slack hand-off, a Fwd: to yuvraj.yadav@, or any value in Q/R). Write the Closed value as just "Closed".
+- The sheet's basic filter shows only screening-stage rows; a filter does not affect reads or writes by range, so leave it on.
 - For a NEW person, append a row after the last filled row and write V as:
   =IF(LEN($An)=0,"",IFS(LEN($Un),"Founders round",LEN($Tn),"Interview with Yash",$Rn="Yes","Next round",$Rn="Other role","Other role",$Rn="No","Closed",$Qn="Not reached","Couldn't connect",$Qn="Done","Screened",TRUE,$AAn))
   with n = that row number. Set P to one plain line on the person (government work, built or ran something, impact motive).
@@ -99,6 +100,6 @@ End with a 3-line summary: rows added/updated, drafts created (names), where the
 ```
 
 ## Notes
-- The routine fires in a fresh cloud session each day. It drafts, it never sends: Akhtar sends the Slack update and Gajju sends the emails.
+- The routine fires into the original build session each day (see the table above for why). It drafts, it never sends: Akhtar sends the Slack update and Gajju sends the emails.
 - Slack allows one attached draft per channel. If yesterday's draft is left unsent, today's goes to Akhtar's DM instead.
 - Yash interview outcomes and founders-round decisions only reach the sheet when someone writes them in columns T and U.
