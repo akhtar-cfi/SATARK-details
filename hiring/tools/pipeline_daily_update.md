@@ -88,26 +88,37 @@ Tally rules (the numbers must add up; check before drafting):
 - Engaged = email replies + LinkedIn applications = in screening + on hold + closed + declined.
 - In screening = Stage in (To be confirmed, Screened, Next round, Interview with Yash, Assignment round, Founders round, Other role); "next round" in the text = Next round + Interview with Yash + Assignment round + Founders round; couldn't connect = To be confirmed with Q = Not reached; to call = the rest of To be confirmed.
 - On hold = Materials in (not forwarded), Asked a question, Replied, materials pending, Applied (form) awaiting Akhtar's review.
-- No-change rule: compare today's counts and Yuvraj columns with the previous Daily log row. If nothing changed, add "(no update from previous)" after the title and drop the "Since" line. If only some lines changed, add "(no update from previous)" to the unchanged lines and show the "Since" line for what did change.
+- No-change rule: compare today's Stages, new candidates and new replies/applications with the previous Daily log row. Nothing changed -> shape A. Anything changed -> shape B. No footer line.
 - Same-day draft rule: Akhtar may already have a draft for today in #satark-hiring (prepared earlier in the day). If the slot is taken (draft_already_exists) and nothing changed since that draft, do not create another; just say so in the FINISH summary. If something changed, create the corrected draft in Akhtar's DM (U08LN3C3E91) headed "Replaces today's earlier draft"; if that slot is also taken, put the full corrected text in the FINISH reply.
 - Next-round names carry a CV link: column L's Drive link; if the CV is only an email attachment, link the candidate's email (Gmail link, opens for Gajju).
 
 Create ONE draft with slack_send_message_draft in channel C0C5Q4H7ZC3 (top level). If it fails with draft_already_exists (an earlier draft is still unsent), create it in Akhtar's own DM (channel_id U08LN3C3E91) instead. Use exactly this shape, numbers from 'Funnel & Actions', omit any empty line:
 
-**SATARK Builder hiring: <d Mon>** <"(no update from previous)" if nothing changed since the last Daily log row>
-Reached <n> by email: <n> replied · <n> no reply · <n> bounced. Plus <n> LinkedIn applications
-<n> engaged (<n> email + <n> LinkedIn) = <n> in screening + <n> on hold + <n> closed + <n> declined
-In screening (<n>): <n> in next round, <Name> ([CV](<link>)) and <Name> ([CV](<link>)) · <n> couldn't connect · <n> to call
-On hold (<n>): <Name> (<reason, 3-5 words>), ...
-Closed (<n>): <n> after screening/interview, <n> LinkedIn not taken forward
-(Optional, only if there is a previous Daily log row: "Since <date>: +<n> replies · +<n> applications · +<n> screened")
+Pick ONE of two shapes.
+
+A) NO MAJOR UPDATE (no Stage changed for anyone, no new candidate, no new reply or application since the previous Daily log row). Do not repeat the pipeline:
+
+**SATARK Builder hiring: <d Mon>** (no update from previous)
 
 **<@U095L5J7HFH>, actions**
 1. Please confirm you can screen these by tomorrow (<Day, d Mon>): <names of Stage "To be confirmed" with Q empty> (details, CVs, videos in the sheet)
-2. Awaiting your status on: <name> (<what: re-try call / Yash interview date + outcome / assignment>), ... (everyone with X = Yuvraj whose Q/R/T has not moved since the previous update)
+2. Awaiting your status on: <name> (<re-try call / Yash interview date + outcome / assignment>), ...
 3. Update only this sheet: https://docs.google.com/spreadsheets/d/1HcnKc_ihN2UiUT6149Y4hfB263T5KLmDerGuBwZLNB0/edit
 
-_Compiled automatically every day at 6 PM IST from Gajendra's inbox, LinkedIn applications, this channel and Yuvraj's screening sheet._
+B) MAJOR UPDATE (anything above changed). Start with the people in screening, then what changed, then actions; the funnel is one closing line:
+
+**SATARK Builder hiring: <d Mon>**
+In screening (<n>):
+• Next round: <Name> ([CV](<link>), <stage: Yash interview / assignment / founders>), ...
+• To be confirmed: <n> (<names>), of which couldn't connect: <names>
+Since <previous log date>: <only what changed: new replies/applications, who moved stage, who was dropped and why in 3-5 words>
+
+**<@U095L5J7HFH>, actions**
+1. Please confirm you can screen these by tomorrow (<Day, d Mon>): <names>
+2. Awaiting your status on: <name> (<what>), ...
+3. Update only this sheet: https://docs.google.com/spreadsheets/d/1HcnKc_ihN2UiUT6149Y4hfB263T5KLmDerGuBwZLNB0/edit
+
+Pipeline: reached <n> by email · <n> engaged = <n> in screening + <n> on hold + <n> closed + <n> declined
 
 FINISH
 End with a 3-line summary: rows added/updated, drafts created (names), where the Slack draft is. Nothing else.
