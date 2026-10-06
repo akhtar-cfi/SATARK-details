@@ -24,8 +24,9 @@ HARD RULES
 - If a connector call fails, retry once; if it still fails, finish what you can and say what failed in the Slack draft.
 
 ACCOUNTS
-- Gmail connector = gajendra@crashfreeindia.org ("Gajju"). Drafts you create land in his Drafts. Sign drafts "Warm regards,\nGajendra".
-- Slack connector = Akhtar (U08LN3C3E91). Gajju = U0545HQJQ. Yuvraj Yadav = U095L5J7HFH (yuvraj.yadav@crashfreeindia.org).
+- Gmail connector should be gajendra@crashfreeindia.org ("Gajju"), so drafts land in his Drafts. Sign drafts "Warm regards,\nGajendra". Check the authuser in any Gmail viewUrl first: if it is not gajendra@ (since 5 Oct it has been akhtar@), do NOT create or edit Gmail drafts; list the draft fixes Gajju must make by hand in the FINISH summary instead.
+- Slack connector = Akhtar (U08LN3C3E91). Gajju = U0545HQJQ. Pushkal = URYRAL2RH. Yuvraj Yadav = U095L5J7HFH (yuvraj.yadav@crashfreeindia.org).
+- Rounds: Yuvraj screening -> interview with Yash -> (assignment, if Yash asks) -> final round with Pushkal and Gajju (Stage "Founders round", column U).
 
 LAST RUN
 "Since the last run" means since 17:51 IST on the date in the last row of the 'Daily log' tab. Read that first. If the tab is empty, use the last 3 days.
@@ -82,7 +83,7 @@ YUVRAJ'S ACTIONS (from the sheet)
 - Stage "Assignment round" -> track the assignment.
 - Any row with X = Yuvraj and Y before today -> overdue.
 
-SLACK DRAFT (crisp: Gajju's overview, then Yuvraj's actions; nothing else)
+SLACK DRAFT (crisp: overview, then the next-round section for Pushkal and Gajju, then Yuvraj's actions; nothing else)
 Tally rules (the numbers must add up; check before drafting):
 - Reached by email = replied + no reply + bounced.
 - Engaged = email replies + LinkedIn applications = in screening + on hold + closed + declined.
@@ -100,6 +101,10 @@ A) NO MAJOR UPDATE (no Stage changed for anyone, no new candidate, no new reply 
 
 **SATARK Builder hiring: <d Mon>** (no update from previous)
 
+**<@URYRAL2RH> <@U0545HQJQ>, next round (with you)**   <- only if someone is Ready or a Decide is open
+• Ready for you: <Name> ([CV](<link>)), please share slots
+• Decide: <Name>, <the open call in a few words>
+
 **<@U095L5J7HFH>, actions**
 1. Please confirm you can screen these by tomorrow (<Day, d Mon>): <names of Stage "To be confirmed" with Q empty> (details, CVs, videos in the sheet)
 2. Awaiting your status on: <name> (<re-try call / Yash interview date + outcome / assignment>), ...
@@ -112,6 +117,12 @@ In screening (<n>):
 • Next round: <Name> ([CV](<link>), <stage: Yash interview / assignment / founders>), ...
 • To be confirmed: <n> (<names>), of which couldn't connect: <names>
 Since <previous log date>: <only what changed: new replies/applications, who moved stage, who was dropped and why in 3-5 words>
+
+**<@URYRAL2RH> <@U0545HQJQ>, next round (with you)**
+• Ready for you: <Stage "Founders round" with U empty, or cleared Yash / assignment> ([CV](<link>)), please share slots
+• Lined up: <Name> (<what is pending: Yash interview on <date> / assignment>), ...
+• Decide: <Name>, <open call needing them, e.g. Yash and Yuvraj disagree>
+(omit empty bullets; omit the whole section if all three are empty)
 
 **<@U095L5J7HFH>, actions**
 1. Please confirm you can screen these by tomorrow (<Day, d Mon>): <names>
@@ -127,4 +138,4 @@ End with a 3-line summary: rows added/updated, drafts created (names), where the
 ## Notes
 - The routine fires into the original build session each day (see the table above for why). It drafts, it never sends: Akhtar sends the Slack update and Gajju sends the emails.
 - Slack allows one attached draft per channel. If yesterday's draft is left unsent, today's goes to Akhtar's DM instead.
-- Yash interview outcomes and founders-round decisions only reach the sheet when someone writes them in columns T and U.
+- Yash interview outcomes and decisions from the final round (Pushkal and Gajju) only reach the sheet when someone writes them in columns T and U.
