@@ -110,26 +110,29 @@ A) NO MAJOR UPDATE (no Stage changed for anyone, no new candidate, no new reply 
 2. Awaiting your status on: <name> (<re-try call / Yash interview date + outcome / assignment>), ...
 3. Update only this sheet: https://docs.google.com/spreadsheets/d/1HcnKc_ihN2UiUT6149Y4hfB263T5KLmDerGuBwZLNB0/edit
 
-B) MAJOR UPDATE (anything above changed). Start with the people in screening, then what changed, then actions; the funnel is one closing line:
+B) MAJOR UPDATE (anything above changed). Akhtar's 4 Oct format (his 07:00 post), plus the Pushkal + Gajju section:
 
-**SATARK Builder hiring: <d Mon>**
-In screening (<n>):
-• Next round: <Name> ([CV](<link>), <stage: Yash interview / assignment / founders>), ...
-• To be confirmed: <n> (<names>), of which couldn't connect: <names>
-Since <previous log date>: <only what changed: new replies/applications, who moved stage, who was dropped and why in 3-5 words>
+**<!channel> SATARK Builder hiring: <d Mon>**
 
-**<@URYRAL2RH> <@U0545HQJQ>, next round (with you)**
-• Ready for you: <Stage "Founders round" with U empty, or cleared Yash / assignment> ([CV](<link>)), please share slots
-• Lined up: <Name> (<what is pending: Yash interview on <date> / assignment>), ...
-• Decide: <Name>, <open call needing them, e.g. Yash and Yuvraj disagree>
-(omit empty bullets; omit the whole section if all three are empty)
+**Reached <n> by email: <n> replied · <n> no reply · <n> bounced. Plus <n> LinkedIn applications**
+**<n> engaged (<n> email + <n> LinkedIn) = <n> in screening + <n> on hold + <n> closed + <n> declined**
+**In screening (<n>): <n> in next round with Pushkal & Gajju, <Name> ([CV](<link>)) and ... · <n> Yash interview, <Name> (<date>, [CV](<link>)) · <n> verdict pending (<names>) · <n> couldn't connect (<names>) · <n> to call (<names>)**
 
-**<@U095L5J7HFH>, actions**
-1. Please confirm you can screen these by tomorrow (<Day, d Mon>): <names>
-2. Awaiting your status on: <name> (<what>), ...
-3. Update only this sheet: https://docs.google.com/spreadsheets/d/1HcnKc_ihN2UiUT6149Y4hfB263T5KLmDerGuBwZLNB0/edit
+On hold (<n>): <Name> (<why, 3-5 words>), ...
+Closed (<n>): <n> after screening/interview, <n> LinkedIn not taken forward. New since <previous log date>: <names, reason in 3-5 words>
 
-Pipeline: reached <n> by email · <n> engaged = <n> in screening + <n> on hold + <n> closed + <n> declined
+**<@URYRAL2RH> <@U0545HQJQ>, next round with you**
+1. <Names in Stage "Founders round" with no date yet>: please share 2-3 slots this week, Yuvraj will schedule
+2. <Name> joins if cleared by Yash on <date> / Decide: <open call>
+(omit empty lines; omit the whole section if empty)
+
+**<@U095L5J7HFH>, key actions for you**
+1. **Schedule the round with Pushkal & Gajju: <names>**
+2. Call: <names>. Re-try: <names>
+3. <verdict / Yash outcome / other status asks, with the column to fill>
+4. **Update only this sheet:** https://docs.google.com/spreadsheets/d/1HcnKc_ihN2UiUT6149Y4hfB263T5KLmDerGuBwZLNB0/edit
+
+SLACK REACH CHECK: if slack_read_channel on C0C5Q4H7ZC3 returns channel_not_found, the Slack connector is on an account outside the Cars24 workspace (since 7 Oct it has been akhtar@crashfreeindia.org). Do not draft anywhere else; put the full update text in the FINISH reply, ready to paste, and say the @mentions must be retyped in Slack.
 
 FINISH
 End with a 3-line summary: rows added/updated, drafts created (names), where the Slack draft is. Nothing else.
