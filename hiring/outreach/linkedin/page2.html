@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Builder</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,400;0,500;0,600;1,500&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+<!-- Render: 1080x1350 viewport, deviceScaleFactor 2 -> 2160x2700 PNG (LinkedIn 4:5). -->
+<style>
+  :root { --brand: #4A35FF; --fg: #1A1C1C; --muted: #777589; --success: #00AA44; --white: #FFFFFF; }
+  @page { size: 1080px 1350px; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1080px; height: 1350px; }
+  body { background: var(--white); font-family: "Geist", sans-serif; color: var(--fg); -webkit-font-smoothing: antialiased; }
+  .page { position: relative; width: 1080px; height: 1350px; overflow: hidden; }
+
+  /* header band */
+  header { background: var(--brand); color: var(--white); height: 312px; padding: 56px 72px 0; display: flex; justify-content: space-between; }
+  header h1 { font-family: "Montserrat"; font-weight: 700; font-size: 74px; line-height: 1; letter-spacing: -0.03em; }
+  header .role { margin-top: 16px; font-family: "Montserrat"; font-weight: 600; font-size: 25px; color: rgba(255,255,255,0.8); }
+  header .hook { margin-top: 22px; font-style: italic; font-weight: 500; font-size: 29px; line-height: 1.3; color: rgba(255,255,255,0.92); }
+  header .brand { display: flex; flex-direction: column; align-items: flex-end; padding-top: 6px; }
+  header .brand img { height: 34px; display: block; }
+  header .brand span { margin-top: 12px; font-family: "Montserrat"; font-weight: 600; font-size: 21px; }
+
+  main { padding: 40px 72px 0; }
+  p { font-size: 23px; line-height: 1.5; }
+  p + p { margin-top: 14px; }
+  h2 { margin-top: 24px; font-family: "Montserrat"; font-weight: 700; font-size: 24px; letter-spacing: -0.005em; }
+  ul { list-style: none; margin-top: 12px; }
+  li { position: relative; padding-left: 28px; font-size: 23px; line-height: 1.42; }
+  li + li { margin-top: 5px; }
+  li::before { content: ""; position: absolute; left: 6px; top: 13px; width: 7px; height: 7px; border-radius: 50%; background: var(--fg); }
+  b { font-weight: 600; }
+
+  .cta, .narrow { width: 650px; }
+  .cta p { margin-top: 12px; }
+
+  /* line illustration */
+  .qr { position: absolute; right: 72px; bottom: 56px; width: 236px; text-align: center; }
+  .qr img { width: 236px; height: 236px; display: block; image-rendering: pixelated; }
+  .qr .cap { margin-top: 14px; font-family: "Montserrat"; font-weight: 700; font-size: 20px; letter-spacing: 0.04em; color: var(--brand); }
+  .art { position: absolute; right: 40px; bottom: 34px; width: 250px; height: 330px; }
+  .art .label { position: absolute; left: 150px; top: 112px; font-style: italic; font-weight: 500; font-size: 22px; white-space: nowrap; }
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <div>
+      <h1>Builder</h1>
+      <div class="role">AI Traffic Enforcement · Crashfree India</div>
+      <div class="hook">Build this vertical like a founder.<br>We’ll back you like one.</div>
+    </div>
+    <div class="brand">
+      <img src="cfi_logo_white_t.png" alt="Crashfree India">
+      <span>Gurugram</span>
+    </div>
+  </header>
+
+  <main>
+    <p>You will build and run a vertical inside Crashfree India like your own company: our AI enforcement tech, built with Cars24 and run with traffic police. It tells officers which vehicle to stop, and why, in about ten seconds, and it is live in three cities. Your job is to take it to 100 districts across India.</p>
+    <p>There is no set playbook. You will build it.</p>
+
+    <h2>What you will do:</h2>
+    <ul>
+      <li>Set the expansion plan: which states and districts, in what order.</li>
+      <li>Sign partnerships with police, transport departments and state governments.</li>
+      <li>Run each launch with our tech team, and stay until officers use it every day.</li>
+      <li>Track the data, fix what isn’t working, and decide where to go next.</li>
+    </ul>
+
+    <h2>What you need to bring:</h2>
+    <ul>
+      <li>Experience working with government: police, district or state administration.</li>
+      <li>Something you have built or run yourself. Failures count.</li>
+      <li>Comfort with data and technology.</li>
+      <li>A track record of choosing impact over titles.</li>
+      <li>Patience with slow processes, and the persistence to push them.</li>
+    </ul>
+
+    <h2>What you get:</h2>
+    <ul class="narrow">
+      <li>A small team, funding and Cars24’s tech.</li>
+      <li>A direct line to Cars24 and Crashfree India leadership.</li>
+    </ul>
+
+    <div class="cta">
+      <h2>How to apply:</h2>
+      <p>Apply through the application link: scan the QR code, or use the link in the post.</p>
+      <p>Any questions? Write to <b>akhtar@crashfreeindia.org</b></p>
+    </div>
+  </main>
+
+  <div class="qr">
+    <img src="apply_qr.png" alt="QR code: application form">
+    <div class="cap">Scan to apply</div>
+  </div>
+</div>
+</body>
+</html>
