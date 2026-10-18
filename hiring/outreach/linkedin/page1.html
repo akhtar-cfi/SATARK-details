@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Builder</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,400;0,500;0,600;1,500&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+<!-- Render: 1080x1350 viewport, deviceScaleFactor 2 -> 2160x2700 PNG (LinkedIn 4:5). -->
+<style>
+  :root { --brand: #4A35FF; --white: #FFFFFF; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1080px; height: 1350px; }
+  body { background: var(--brand); color: var(--white); font-family: "Geist", sans-serif; -webkit-font-smoothing: antialiased; }
+  .poster { position: relative; width: 1080px; height: 1350px; padding: 72px 88px 80px; display: flex; flex-direction: column; overflow: hidden; }
+  .glow { position: absolute; inset: 0; pointer-events: none;
+    background: radial-gradient(circle at 85% 12%, rgba(255,255,255,0.16), rgba(255,255,255,0) 50%); }
+  .poster > *:not(.glow) { position: relative; }
+
+  .top { display: flex; align-items: center; justify-content: space-between; }
+  .top img { height: 40px; display: block; }
+  .tag { font-family: "Montserrat"; font-weight: 700; font-size: 20px; letter-spacing: 0.2em;
+    border: 2px solid rgba(255,255,255,0.45); border-radius: 999px; padding: 12px 22px 12px 26px; }
+
+  .hero { margin-top: auto; }
+  .poster > .signal { position: absolute; right: 92px; top: 196px; width: 150px; height: 372px; }
+  h1 { font-family: "Montserrat"; font-weight: 700; font-size: 104px; line-height: 1.04; letter-spacing: -0.04em; }
+  h1 .dim { color: rgba(255,255,255,0.58); }
+  .role { font-family: "Montserrat"; font-weight: 600; font-size: 30px; color: rgba(255,255,255,0.8); margin-bottom: 26px; letter-spacing: -0.005em; }
+  .line2 { margin-top: 18px; font-family: "Montserrat"; font-weight: 600; font-size: 28px; color: rgba(255,255,255,0.62); letter-spacing: -0.01em; }
+  .line { margin-top: 40px; font-family: "Montserrat"; font-weight: 600; font-size: 34px; line-height: 1.32; letter-spacing: -0.01em; color: rgba(255,255,255,0.86); }
+
+  .foot { margin-top: 72px; padding-top: 36px; border-top: 2px solid rgba(255,255,255,0.22);
+    display: flex; align-items: center; justify-content: space-between; }
+  .pill { display: inline-flex; align-items: center; gap: 14px; background: var(--white); color: var(--brand);
+    height: 72px; padding: 0 30px 0 34px; border-radius: 999px; font-weight: 600; font-size: 28px; }
+  .pill svg { width: 28px; height: 28px; }
+  .where { font-weight: 500; font-size: 24px; color: rgba(255,255,255,0.8); text-align: right; line-height: 1.4; }
+</style>
+</head>
+<body>
+<div class="poster">
+  <div class="glow" aria-hidden="true"></div>
+  <div class="top">
+    <img src="cfi_logo_white_t.png" alt="Crashfree India">
+    <div class="tag">WE’RE HIRING</div>
+  </div>
+
+  <svg class="signal" viewBox="0 0 150 372" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" aria-hidden="true">
+    <rect x="6" y="6" width="138" height="360" rx="40"/>
+    <path d="M27 90 A48 48 0 0 1 123 90" opacity="0.55"/>
+    <path d="M27 205 A48 48 0 0 1 123 205" opacity="0.55"/>
+    <path d="M27 320 A48 48 0 0 1 123 320" opacity="0.55"/>
+    <circle cx="75" cy="80" r="36" opacity="0.35"/>
+    <circle cx="75" cy="194" r="36" opacity="0.35"/>
+    <circle cx="75" cy="308" r="36" fill="#00AA44" stroke="#FFFFFF"/>
+  </svg>
+
+  <div class="hero">
+    <div class="role">Builder · AI Traffic Enforcement</div>
+    <h1><span class="dim">Build it</span><br>like a founder.</h1>
+    <p class="line">Take AI enforcement tech to 100 districts<br>across India, and bring road crashes down.</p>
+    <p class="line2">A team, funding and Cars24 behind you.</p>
+  </div>
+
+  <div class="foot">
+    <div class="pill">Details and how to apply
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+    </div>
+    <div class="where">Gurugram</div>
+  </div>
+</div>
+</body>
+</html>
