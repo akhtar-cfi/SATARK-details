@@ -7,7 +7,7 @@ description: Design and language system for Crashfree India job descriptions (JD
 
 This skill makes every Crashfree India JD look and read like one family. It covers the **form** (layout, type, colour, rendering) and the **voice** (how sentences are written). It does **not** decide what a role is: the person using it brings the role, the responsibilities and the asks.
 
-Reference output: `examples/example_cover.png` (LinkedIn cover) and `examples/example_jd_page.png` (the JD page). Study both before you start.
+Reference output: `examples/example_cover.jpg` (LinkedIn cover) and `examples/example_jd_page.jpg` (the JD page). Study both before you start.
 
 ## Deliverables
 
